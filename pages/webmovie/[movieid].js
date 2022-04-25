@@ -73,7 +73,7 @@ const Post = ({ data }) => {
               <p className="me-2 text-muted">Language</p>
               {spoken_languages.map((item) => {
                 return (
-                  <div className="me-2 fw-bold">
+                  <div key={item.id} className="me-2 fw-bold">
                     <span className="badge bg-light text-danger fs-8">
                       {item.english_name}
                     </span>
@@ -85,7 +85,7 @@ const Post = ({ data }) => {
               <p className="me-2 text-muted">Production Company</p>
               {production_companies.map((item) => {
                 return (
-                  <div className="me-2 fw-bold">
+                  <div key={item.id} className="me-2 fw-bold">
                     <span className="fs-6">{item.name}</span>
                   </div>
                 );

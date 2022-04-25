@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import { Button, Col, Card, Container, Row } from "react-bootstrap";
+import Nav from "../navigation";
 import style from "styles/webmoviestyle.module.css";
 
 const Index = ({ data }) => {
@@ -12,6 +13,7 @@ const Index = ({ data }) => {
       <Head>
         <title>Web Movie</title>
       </Head>
+      <Nav />
       <h1 className="text-start p-4">Popular Movie</h1>
       <Row>
         {movie && movie.length

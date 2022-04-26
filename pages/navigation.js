@@ -5,7 +5,7 @@ const Navigation = () => {
   return (
     <Navbar bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand href="#">Intro-Next</Navbar.Brand>
+        <Navbar.Brand href="/">Intro-Next</Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text>

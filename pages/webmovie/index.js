@@ -20,8 +20,8 @@ const Index = ({ data }) => {
         <Row>
           {movie && movie.length
             ? movie.map((item) => (
-                <Link passHref href={`/webmovie/${item.id}`}>
-                  <Col key={item.id}>
+                <Link passHref href={`/webmovie/${item.id}`} key={item.id}>
+                  <Col>
                     <div className="ms-3 py-3">
                       <Card
                         style={{

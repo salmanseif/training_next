@@ -44,6 +44,7 @@ const Post = ({ data }) => {
               src={"https://image.tmdb.org/t/p/w500" + data.poster_path}
               width={600}
               height={800}
+              alt={data.title}
             />
           </Col>
           <Col className="position-relative">
